@@ -3,8 +3,8 @@
 import { useShop } from "@/app/context/ShopContext";
 import { getTemplate } from "@/components/shopui/templates/registry";
 
-export default function ProductItem(props) {
+export default function StoreSectionHeading(props) {
   const { selectedTemplate } = useShop();
-  const { ProductCard } = getTemplate(selectedTemplate);
-  return <ProductCard {...props} />;
+  const { SectionHeading } = getTemplate(selectedTemplate);
+  return <SectionHeading {...props} />;
 }
